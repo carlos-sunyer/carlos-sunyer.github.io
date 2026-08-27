@@ -99,9 +99,23 @@ details p {
   font-size: 0.95rem;
 }
 
-/* ===== Teaching ===== */
-.teaching { margin: 0; }
-.meta-inline { color: var(--muted); font-size: 0.95rem; }
+/* ===== Etiquetas y notas ===== */
+.tag {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+}
+
+.note {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
 
 /* ===== Footer ===== */
 footer {
