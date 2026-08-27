@@ -9,6 +9,8 @@
 
 * { box-sizing: border-box; }
 
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
@@ -29,7 +31,13 @@ main, header nav, footer p {
 /* ===== Header / nav ===== */
 header {
   border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
 }
+
+main section { scroll-margin-top: 4.5rem; }
 
 nav {
   display: flex;
@@ -52,22 +60,30 @@ nav a.active { color: var(--text); font-weight: 600; }
 main { padding-top: 2.5rem; padding-bottom: 3rem; }
 
 h1 { font-size: 1.8rem; margin: 0 0 1rem; font-weight: normal; }
+
 h2 {
+  font-size: 1.5rem;
+  margin: 3rem 0 1rem;
+  font-weight: normal;
+}
+
+h3 {
   font-size: 1.15rem;
   margin: 2.5rem 0 1rem;
   padding-bottom: 0.3rem;
   border-bottom: 1px solid var(--rule);
   font-weight: 600;
 }
-h3 { font-size: 1.05rem; margin: 0 0 0.2rem; font-weight: 600; }
 
-.paper h3 a {
+h4 { font-size: 1.05rem; margin: 0 0 0.2rem; font-weight: 600; }
+
+.paper h4 a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid var(--rule);
 }
 
-.paper h3 a:hover {
+.paper h4 a:hover {
   color: var(--accent);
   border-bottom-color: var(--accent);
 }
@@ -116,7 +132,7 @@ details p {
   font-size: 0.9rem;
 }
 
-.paper h3 .title-links a {
+.paper h4 .title-links a {
   border-bottom: none;
   color: var(--accent);
 }
