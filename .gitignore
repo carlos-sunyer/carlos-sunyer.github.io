@@ -1,0 +1,12 @@
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Originales de fotos en alta resolución (solo suben las optimizadas)
+photos/originals/
+*.CR2
+*.CR3
+*.NEF
+*.ARW
+*.dng
