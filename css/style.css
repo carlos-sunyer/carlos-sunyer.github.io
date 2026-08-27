@@ -99,6 +99,10 @@ details p {
   font-size: 0.95rem;
 }
 
+/* ===== Teaching ===== */
+.teaching { margin: 0; }
+.meta-inline { color: var(--muted); font-size: 0.95rem; }
+
 /* ===== Footer ===== */
 footer {
   border-top: 1px solid var(--rule);
