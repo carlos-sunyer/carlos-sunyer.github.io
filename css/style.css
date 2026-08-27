@@ -111,6 +111,16 @@ details p {
 }
 
 /* ===== Etiquetas y notas ===== */
+.title-links {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.paper h3 .title-links a {
+  border-bottom: none;
+  color: var(--accent);
+}
+
 .tag {
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: 0.75rem;
