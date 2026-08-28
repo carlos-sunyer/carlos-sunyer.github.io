@@ -16,3 +16,6 @@ photos/originals/
 
 # CVs de referencia (no se publican)
 plantilla_cvs/
+
+# Originales de la galeria (se optimizan a photos/gallery/)
+gallery/
