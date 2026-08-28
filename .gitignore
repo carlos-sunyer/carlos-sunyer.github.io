@@ -18,4 +18,4 @@ photos/originals/
 plantilla_cvs/
 
 # Originales de la galeria (se optimizan a photos/gallery/)
-gallery/
+/gallery/
