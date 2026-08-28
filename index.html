@@ -14,8 +14,8 @@
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#policy">Policy and Popular Writing</a>
+      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
-      <!-- <a href="#photography">Photography</a> -->
     </nav>
   </header>
 
@@ -185,6 +185,25 @@
       </article>
     </section>
 
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="masonry">
+        <img src="photos/gallery/gallery-01.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-02.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-03.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-04.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-05.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-06.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-07.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-08.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-09.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-10.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-11.jpg" alt="" loading="lazy" decoding="async">
+        <img src="photos/gallery/gallery-12.jpg" alt="" loading="lazy" decoding="async">
+      </div>
+      <img src="photos/gallery/gallery-pano.jpg" alt="" class="pano" loading="lazy" decoding="async">
+    </section>
+
     <section id="contact">
       <h2>Contact</h2>
       <p class="bio">
@@ -197,6 +216,23 @@
   <footer>
     <p>&copy; Carlos Sunyer</p>
   </footer>
+
+  <div id="lightbox" hidden><img src="" alt=""></div>
+
+  <script>
+    const lb = document.getElementById('lightbox');
+    const lbImg = lb.querySelector('img');
+    document.querySelectorAll('#gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        lbImg.src = img.src;
+        lb.hidden = false;
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    const cerrar = () => { lb.hidden = true; lbImg.src = ''; document.body.style.overflow = ''; };
+    lb.addEventListener('click', cerrar);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrar(); });
+  </script>
 
 </body>
 </html>

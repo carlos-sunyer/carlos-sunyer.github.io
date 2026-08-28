@@ -163,6 +163,47 @@ details p {
   color: var(--muted);
 }
 
+/* ===== Gallery ===== */
+.masonry {
+  columns: 3 200px;
+  column-gap: 10px;
+}
+
+.masonry img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  cursor: zoom-in;
+}
+
+.pano {
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  cursor: zoom-in;
+}
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(15, 18, 22, 0.93);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 2vw;
+  cursor: zoom-out;
+}
+
+#lightbox[hidden] { display: none; }
+
+#lightbox img {
+  max-width: 96vw;
+  max-height: 96vh;
+  object-fit: contain;
+}
+
 /* ===== Footer ===== */
 footer {
   border-top: 1px solid var(--rule);
