@@ -2,7 +2,7 @@
 :root {
   --text: #1f2328;
   --muted: #6a737d;
-  --accent: #1a4f8a;
+  --accent: #173f61;
   --rule: #e4e7ea;
   --bg: #ffffff;
 }
@@ -69,9 +69,8 @@ h2 {
 
 h3 {
   font-size: 1.15rem;
-  margin: 2.5rem 0 1rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid var(--rule);
+  margin: 3rem 0 1rem;
+  color: #183b68;
   font-weight: 600;
 }
 
