@@ -204,6 +204,39 @@ details p {
   object-fit: contain;
 }
 
+/* ===== Movil ===== */
+@media (max-width: 640px) {
+  nav {
+    gap: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  main { padding-top: 1.5rem; }
+
+  h2 { font-size: 1.6rem; margin-top: 2.25rem; }
+  h3 { font-size: 1.25rem; margin-top: 2rem; }
+
+  .masonry {
+    columns: auto;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+  }
+
+  .masonry img {
+    height: 240px;
+    width: auto;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-bottom: 0;
+  }
+
+  .pano { margin-top: 8px; }
+}
+
 /* ===== Footer ===== */
 footer {
   border-top: 1px solid var(--rule);
