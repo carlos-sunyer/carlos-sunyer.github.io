@@ -51,6 +51,7 @@ nav {
 nav a {
   color: var(--muted);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 nav a:hover { color: var(--accent); }
@@ -215,11 +216,53 @@ details p {
   object-fit: contain;
 }
 
+/* ===== Blog (posts) ===== */
+.post-header { margin-bottom: 2rem; }
+
+.post-header h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  color: #183b68;
+  margin: 0 0 0.5rem;
+}
+
+.post-date {
+  margin: 0;
+  color: var(--muted);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+}
+
+.post p { margin: 0 0 1.1rem; }
+
+.post h2 { font-size: 1.35rem; margin-top: 2.5rem; }
+
+.post figure { margin: 2rem 0; }
+
+.post figure.narrow {
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post figure img {
+  width: 100%;
+  display: block;
+}
+
+.post figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
 /* ===== Movil ===== */
 @media (max-width: 640px) {
   nav {
-    gap: 0.75rem;
-    font-size: 0.85rem;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.6rem;
+    font-size: 0.8rem;
   }
 
   main { padding-top: 1.5rem; }
@@ -227,6 +270,7 @@ details p {
   h2, h1.page-title { font-size: 1.6rem; margin-top: 2.25rem; }
   h1.page-title { margin-top: 0; }
   h3 { font-size: 1.25rem; margin-top: 2rem; }
+  .post-header h1 { font-size: 1.6rem; }
 
   .masonry {
     columns: auto;

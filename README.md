@@ -9,14 +9,20 @@ Sitio estatico (HTML/CSS plano) para GitHub Pages.
 - `writing.html`: Other Writing. Policy reports, articles and blogposts y book
   reviews. Los titulos en castellano llevan la traduccion al ingles detras, en
   un `<span class="translation">[...]</span>`.
+- `blog.html`: indice del blog, mismo formato que `writing.html` (titulo en
+  castellano + traduccion).
+- `blog/`: un HTML por post (`lang="es"`), con rutas relativas `../`.
 - `gallery.html`: galeria de fotos, con el lightbox en un `<script>` al final.
-- `css/style.css`: unica hoja de estilos, compartida por las tres paginas.
+- `css/style.css`: unica hoja de estilos, compartida por todas las paginas.
 - `files/`: PDFs (cv.pdf). Nombres en minusculas y sin espacios.
 - `photos/`: imagenes optimizadas para web (JPG, <=2000 px de lado largo). Los
   originales en alta resolucion van en `photos/originals/`, excluida del repo.
 
-La nav es identica en las tres paginas. Al anadir o quitar una entrada hay que
-tocar las tres. La pagina activa lleva `class="active"` en su enlace.
+- `photos/blog/`: imagenes de los posts, con el slug del post como prefijo.
+
+La nav es identica en todas las paginas (incluidos los posts de `blog/`). Al
+anadir o quitar una entrada hay que tocarlas todas. La pagina activa lleva
+`class="active"` en su enlace; en los posts, el activo es Blog.
 
 ## Publicar
 
@@ -32,6 +38,15 @@ Copiar un bloque `<article class="paper">...</article>` en la seccion
 correspondiente de `index.html`, editar titulo, coautores y enlaces, y hacer
 commit + push. Para una entrada nueva en `writing.html`, mismo bloque mas la
 linea de traduccion si el titulo esta en castellano.
+
+## Anadir un post
+
+1. Copiar `blog/limitar-alquiler.html` a `blog/<slug>.html` y cambiar `<title>`,
+   `description`, `h1`, fecha y cuerpo. Las figuras van en
+   `<figure>` con `<figcaption>` para la fuente; `class="narrow"` para graficos
+   altos que no deben ocupar todo el ancho.
+2. Imagenes en `photos/blog/<slug>-*.jpg`.
+3. Anadir la entrada arriba del todo en `blog.html` (orden cronologico inverso).
 
 ## Ver en local
 
