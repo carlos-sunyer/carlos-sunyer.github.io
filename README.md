@@ -47,6 +47,16 @@ linea de traduccion si el titulo esta en castellano.
    altos que no deben ocupar todo el ancho.
 2. Imagenes en `photos/blog/<slug>-*.jpg`.
 3. Anadir la entrada arriba del todo en `blog.html` (orden cronologico inverso).
+4. SEO: en la cabecera del post nuevo, cambiar canonical, `og:*`,
+   `article:published_time` y el bloque JSON-LD `BlogPosting` (titulo,
+   descripcion, fechas, URL). Anadir la URL a `sitemap.xml`.
+
+## SEO
+
+Cada pagina lleva canonical, favicon, Open Graph y Twitter Card en la cabecera.
+La portada lleva un JSON-LD `Person`; cada post, un `BlogPosting`.
+`robots.txt` y `sitemap.xml` en la raiz; actualizar `lastmod` al cambiar una
+pagina de forma sustancial.
 
 ## Ver en local
 
