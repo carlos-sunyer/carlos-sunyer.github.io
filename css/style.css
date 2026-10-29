@@ -125,11 +125,31 @@ a { color: var(--accent); }
 .paper .meta { color: var(--muted); margin: 0 0 0.25rem; font-size: 0.95rem; }
 .paper-links { margin: 0 0 0.25rem; font-size: 0.95rem; }
 
+/* Abstract desplegable debajo de los coautores */
+details.abstract { margin: 0.15rem 0 0.25rem; }
+
 details summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  list-style: none;
   cursor: pointer;
-  color: var(--accent);
-  font-size: 0.95rem;
+  color: #b0846f;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
 }
+
+details summary::-webkit-details-marker { display: none; }
+
+details summary::after {
+  content: "\25BE";
+  font-size: 0.7em;
+  transition: transform 0.15s ease;
+}
+
+details[open] summary::after { transform: rotate(180deg); }
+
+details summary:hover { color: #8f6450; }
 
 details p {
   margin: 0.5rem 0 0;
