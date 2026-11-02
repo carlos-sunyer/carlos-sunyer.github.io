@@ -6,7 +6,8 @@ Sitio estatico (HTML/CSS plano) para GitHub Pages.
 
 - `index.html`: portada. Solo trabajo academico, con secciones ancladas About
   (#about), Research (#research) y Contact (#contact).
-- `writing.html`: Other Writing. Policy reports, articles and blogposts y book
+- `writing.html`: Other Publications. Refereed publications, book chapters,
+  policy reports, articles and blogposts y book
   reviews. Los titulos en castellano llevan la traduccion al ingles detras, en
   un `<span class="translation">[...]</span>`.
 - `blog.html`: indice del blog, mismo formato que `writing.html` (titulo en
