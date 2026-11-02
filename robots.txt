@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot-Image
+Disallow: /photos/profile.jpg
+
 Sitemap: https://carlos-sunyer.github.io/sitemap.xml
