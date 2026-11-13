@@ -121,12 +121,13 @@ a { color: var(--accent); }
 .intro-text { flex: 1; min-width: 260px; }
 
 .jmp-link {
-  color: #7a1e2c;
-  font-size: 1.1rem;
+  color: #183b68;
+  font-size: 1.25rem;
+  font-weight: 600;
   text-underline-offset: 3px;
 }
 
-.jmp-link:hover { color: #5a141f; }
+.jmp-link:hover { color: var(--accent); }
 .affiliation { color: var(--muted); margin-top: 0.2rem; }
 
 /* ===== Papers ===== */
