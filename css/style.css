@@ -205,6 +205,26 @@ details p {
   color: var(--muted);
 }
 
+/* ===== Data Projects: numero, icono y texto en una fila ===== */
+.project { display: flex; align-items: flex-start; gap: 1rem; margin-top: 1.5rem; }
+.project-num {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding-top: 0.25rem;
+}
+.project-icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--bg);
+}
+.project-body { flex: 1; min-width: 0; }
+.project .tag { text-decoration: none; }
+
 /* ===== Gallery ===== */
 .masonry {
   columns: 3 200px;
